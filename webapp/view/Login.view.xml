@@ -1,4 +1,4 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"  displayBlock="true">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
 	<Shell>
 		<App>
 			<pages>
@@ -7,18 +7,18 @@
 						<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
 						<Panel headerText="{i18n>helloPanelTitle}">
 							<content>
-								<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+								<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="loginform">
 									<sap.ui.layout.form:formContainers>
 										<sap.ui.layout.form:FormContainer title="Title" id="container2">
 											<sap.ui.layout.form:formElements>
 												<sap.ui.layout.form:FormElement label="Benutzername/E-Mail" id="benutzer">
 													<sap.ui.layout.form:fields>
-														<Input width="100%" id="input2"/>
+														<Input width="100%" id="emailLogin"/>
 													</sap.ui.layout.form:fields>
 												</sap.ui.layout.form:FormElement>
 												<sap.ui.layout.form:FormElement label="Password" id="password">
 													<sap.ui.layout.form:fields>
-														<Input width="100%" id="input0"/>
+														<Input width="100%" id="passwordLogib"/>
 													</sap.ui.layout.form:fields>
 												</sap.ui.layout.form:FormElement>
 											</sap.ui.layout.form:formElements>
