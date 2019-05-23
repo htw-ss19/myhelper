@@ -1,0 +1,28 @@
+{
+  "Customers": [
+	{
+	  "E-Mail": "",
+	  "Benutzername": "",
+	  "Vorname":"",
+	  "Nachname": "",
+	  "Straße": "",
+	  "Hausnummer": "",
+	  "Postleitzahl":"",
+	  "Adresszusatz":"",
+	  "Land":"",
+	  "Passwort":""
+	},
+	{
+	  "E-Mail": "",
+	  "Benutzername": "",
+	  "Vorname":"",
+	  "Nachname": "",
+	  "Straße": "",
+	  "Hausnummer": "",
+	  "Postleitzahl":"",
+	  "Adresszusatz":"",
+	  "Land":"",
+	  "Passwort":""
+	}
+  ]
+}

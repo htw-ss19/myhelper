@@ -1,12 +1,11 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"  controllerName="myhelper.controller.Login" displayBlock="true">
 	<App>
 		<pages>
 			<Page title="MyHelp">
 				<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
 				<content>
 					<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
-						<Panel headerText="Login" class="sapUiResponsiveMargin"
-							width="auto">
+						<Panel headerText="Login" class="sapUiResponsiveMargin" width="auto">
 							<content>
 								<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="loginform">
 									<sap.ui.layout.form:formContainers>
@@ -28,16 +27,13 @@
 									<sap.ui.layout.form:layout>
 										<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
 									</sap.ui.layout.form:layout>
-								</sap.ui.layout.form:Form>
-								<Button xmlns="sap.m" text="Anmelden" id="login_btn" type="Emphasized"/>
+								</sap.ui.layout.form:Form><Button xmlns="sap.m" text="Anmelden" id="login_btn" type="Emphasized"/>
 							</content>
 						</Panel>
 						<Panel>
 							<content>
 								<Text xmlns="sap.m" text="Noch nicht regestriert?" id="text3"/>
-								<Button xmlns="sap.m" text="Regestieren" id="reges_betn" type="Emphasized" 
-								press=".onShowHello"
-									class="sapUiSmallMarginEnd"/>
+								<Button xmlns="sap.m" text="Regestieren" id="reges_betn" type="Emphasized" press=".onLogin"/>
 							</content>
 						</Panel>
 						<Text xmlns="sap.m" text="Terms | Privacy | Security | Contact" id="text0"/>
