@@ -20,20 +20,20 @@
 						</Panel>
 						<Panel>
 							<content>
-								<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
-								<Button xmlns="sap.m" text="Button" id="button1"/>
+								<!-- <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+							-->	<Button xmlns="sap.m" text="Button" id="button1"/>
 							</content>
 						</Panel>
 						<Panel>
 							<content>
-								<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
-								<Button xmlns="sap.m" text="Button" id="button2"/>
+							<!--	<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+								-->	<Button xmlns="sap.m" text="Button" id="button2"/>
 							</content>
 						</Panel>
 						<Panel>
 							<content>
-								<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
-								<Button xmlns="sap.m" text="Button" id="button3"/>
+							<!--	<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+								-->	<Button xmlns="sap.m" text="Button" id="button3"/>
 							</content>
 						</Panel>
 						<Text xmlns="sap.m" text="Terms | Privacy | Security | Contact" id="text0"/>
