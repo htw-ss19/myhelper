@@ -13,6 +13,7 @@
 										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item4"/>
 										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item5"/>
 										                </items>
+										            
 										        </ComboBox>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
@@ -23,6 +24,7 @@
 										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item48"/>
 										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item49"/>
 										                </items>
+										            
 										        </ComboBox>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
@@ -55,6 +57,11 @@
 										                </items>
 										            
 										        </ComboBox>
+										    </sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+										<sap.ui.layout.form:FormElement label="Label" id="element6">
+										    <sap.ui.layout.form:fields>
+										        <Input width="100%" id="input6"/>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
 										<sap.ui.layout.form:FormElement label="E-Mail" id="email_label">
