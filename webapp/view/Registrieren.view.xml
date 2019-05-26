@@ -3,6 +3,9 @@
 		<App>
 			<pages><Page>
 					<content>
+						<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"/>
+							<content><Text xmlns="sap.m" text="Willkommen bei myhelper" id="text2"/>
+							</content>
 						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
 							<sap.ui.layout.form:formContainers>
 								<sap.ui.layout.form:FormContainer id="container1">
@@ -87,6 +90,7 @@
 							</sap.ui.layout.form:layout>
 						</sap.ui.layout.form:Form>
 						<Button xmlns="sap.m" text="Button" id="button0"/>
+						<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Willkommen bei myhelper" id="text2"/>
 					</content>
 				</Page>
 			</pages>
