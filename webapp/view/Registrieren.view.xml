@@ -1,92 +1,93 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
-	<Shell>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
+	<Shell xmlns="sap.m">
 		<App>
 			<pages><Page>
 					<content>
-						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+						<Image id="image0" height="140px" width="140px" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" />
+						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0" editable="true">
 							<sap.ui.layout.form:formContainers>
 								<sap.ui.layout.form:FormContainer id="container1">
-									<sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement label="Anrede" id="anrede_lable">
+									<sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement id="anrede_lable" label="Anrede">
 										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="anrede_box" maxWidth="45%">
+										        <ComboBox id="anrede_box" maxWidth="45%">
 										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item4"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item5"/>
+										                <core:Item xmlns:core="sap.ui.core" id="item4" text="Item 1 Text" key="item-1-key" />
+										                <core:Item xmlns:core="sap.ui.core" id="item5" text="Item 2 Text" key="item-2-key" />
 										                </items>
 										            
 										        </ComboBox>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Titel" id="title_label">
+										<sap.ui.layout.form:FormElement id="title_label" label="Titel">
 										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="titel_box" maxWidth="45%">
+										        <ComboBox id="titel_box" maxWidth="45%">
 										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item48"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item49"/>
+										                <core:Item xmlns:core="sap.ui.core" id="item48" text="Item 1 Text" key="item-1-key" />
+										                <core:Item xmlns:core="sap.ui.core" id="item49" text="Item 2 Text" key="item-2-key" />
 										                </items>
 										            
 										        </ComboBox>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Vorname" id="firstname_lable">
+										<sap.ui.layout.form:FormElement id="firstname_lable" label="Vorname">
 											<sap.ui.layout.form:fields>
-												<Input width="100%" id="firstname_input"/>
+												<Input id="firstname_input" width="100%" />
 											</sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Nachname" id="lastname_label">
+										<sap.ui.layout.form:FormElement id="lastname_label" label="Nachname">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="lastname_input"/>
+										        <Input id="lastname_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Straße" id="element3">
+										<sap.ui.layout.form:FormElement id="element3" label="Straße">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="stree_input"/>
+										        <Input id="stree_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Hausnummer" id="element0">
+										<sap.ui.layout.form:FormElement id="element0" label="Hausnummer">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="number_input"/>
+										        <Input id="number_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Land" id="element0_1558278276262">
+										<sap.ui.layout.form:FormElement id="element0_1558278276262" label="Land">
 										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="country_box">
+										        <ComboBox id="country_box">
 										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item16"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item17"/>
+										                <core:Item xmlns:core="sap.ui.core" id="item16" text="Item 1 Text" key="item-1-key" />
+										                <core:Item xmlns:core="sap.ui.core" id="item17" text="Item 2 Text" key="item-2-key" />
 										                </items>
 										            
 										        </ComboBox>
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Label" id="element6">
+										<sap.ui.layout.form:FormElement id="element6" label="Label">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="input6"/>
+										        <Input id="input6" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="E-Mail" id="email_label">
+										<sap.ui.layout.form:FormElement id="email_label" label="E-Mail">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="email_input"/>
+										        <Input id="email_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Password" id="password_label">
+										<sap.ui.layout.form:FormElement id="password_label" label="Password">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="password_input"/>
+										        <Input id="password_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
-												<sap.ui.layout.form:FormElement label="Password wiederholen" id="password_again_label">
+												<sap.ui.layout.form:FormElement id="password_again_label" label="Password wiederholen">
 										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="password_again_input"/>
+										        <Input id="password_again_input" width="100%" />
 										    </sap.ui.layout.form:fields>
 										</sap.ui.layout.form:FormElement>
 									</sap.ui.layout.form:formElements>
 								</sap.ui.layout.form:FormContainer>
 							</sap.ui.layout.form:formContainers>
 							<sap.ui.layout.form:layout>
-								<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+								<sap.ui.layout.form:ResponsiveGridLayout id="layout0" />
 							</sap.ui.layout.form:layout>
 						</sap.ui.layout.form:Form>
-						<Button xmlns="sap.m" text="Button" id="button0"/>
+						<Button id="button0" text="Button" />
 					</content>
 				</Page>
 			</pages>
