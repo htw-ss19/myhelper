@@ -1,5 +1,34 @@
- <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
-	<App>
-		<pages></pages>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<App xmlns="sap.m">
+		<pages>
+			<Page title="Adresse">
+				<Image id="image0" height="50px" width="50px" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" />
+				<content>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0" editable="true">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer title="Adresse auswähle" id="container0">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement id="label2222" label="Adresse Uebernehmen :">
+										<sap.ui.layout.form:fields>
+											<Input id="input0_1558974353712" width="100%" />
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement id="neuAdresse_label" label="Neue Adresse auswählen :">
+										    <sap.ui.layout.form:fields>
+										        <Input id="email_input" width="100%" />
+										    </sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout id="layout0" />
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+					<Button id="button0" text="Button" />
+				<Text id="text0" text="Terms | Privacy | Security | Contact" />
+				</content>
+			</Page>
+		</pages>
 	</App>
 </mvc:View>
