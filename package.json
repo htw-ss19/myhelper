@@ -1,5 +1,5 @@
 {
-  "name": "MyHelper",
+  "name": "myhelper",
   "description": "ICP Shuttle Admin Web UI",
   "version": "0.1.0",
   "main": "index.html",
@@ -17,12 +17,14 @@
     "core-js": "2.4.1",
     "express": "4.14.0"
   },
-  "devDependencies": {
-    "concurrently": "3.x.x",
-    "lite-server": "2.x.x",
-    "tslint": "4.x.x",
-    "typescript": "2.x.x",
-    "eslint": "^3.8.1",
-    "eslint-config-airbnb": "^12.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htw-ss19/final-project-portal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htw-ss19/final-project-portal/issues"
+  },
+  "homepage": "https://github.com/htw-ss19/final-project-portal#readme"
 }
