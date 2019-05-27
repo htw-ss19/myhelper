@@ -1,0 +1,39 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="DL-Uebersicht">
+				<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+				<content>
+					<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
+						<Panel>
+							<content><Text xmlns="sap.m" text="Uebersicht Dienstleistung" id="text2"/>
+							</content>
+							
+						</Panel>
+											</VBox>
+
+						<Panel>
+							<content>
+								<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+								<Button xmlns="sap.m" text="Button" id="button0"/>
+							</content>
+						</Panel>
+						<Panel>
+							<content>
+							<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+							<Button xmlns="sap.m" text="Button" id="button1"/>
+							</content>
+						</Panel>
+						<Panel>
+							<content>
+							<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1558462464903"/>
+							<Button xmlns="sap.m" text="Button" id="button2"/>
+							</content>
+						</Panel>
+						
+						<Text xmlns="sap.m" text="Terms | Privacy | Security | Contact" id="text0"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

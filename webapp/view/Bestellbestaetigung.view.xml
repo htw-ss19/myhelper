@@ -1,5 +1,28 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
-	<App>
-		<pages></pages>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<App xmlns="sap.m">
+		<pages><Page title="Bestellbestaetigung">
+				<Image id="image0" height="50px" width="50px" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png"/>
+				
+				
+				
+				
+				<content>
+				
+					        <Text id="text0" text="Bestellung angeschlössen"/>
+					         <Text id="text0" text="Vielen Dank für Ihre Bestellung!"/>
+					          <Text id="text0" text="zur uebersicht zurueckkehren"/>
+				<Button xmlns="sap.m" id="button0" text="Uebersicht"/>
+				<Bar id="bar0">
+					    
+				    <contentMiddle>
+					    
+				        <Text xmlns="sap.m" id="text0" text="Terms | Privacy | Security | Contact"/>
+					    
+				    </contentMiddle>
+					    
+				</Bar>
+				</content>
+			</Page>
+		</pages>
 	</App>
 </mvc:View>
