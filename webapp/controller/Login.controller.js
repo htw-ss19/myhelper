@@ -2,11 +2,8 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
 	return Controller.extend("myhelper.controller.Login", {
 		onInit: function () {},
-		/**
-		 *@memberOf uc.UserCkeck.controller.View1
-		 */
 		checkUser: function (oEvent) {
-			var user = this.byId('benutzer').getValue();
+			var user = this.byId('emailLogin').getValue();
 			sap.m.MessageToast.show("Benutzername/E-Mail " + user + " " + this._validateUser(user));
 		},
 		_validateUser: function (sUserName) {
