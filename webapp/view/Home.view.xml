@@ -1,37 +1,43 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="myhelper.myhelper.controller.Home" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
-			<pages><Page id="page" title="Willkommen bei myhelper!">
+			<pages>
+				<Page id="page" title="Willkommen bei myhelper!">
 					<content>
-					<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
-						<items>
-							<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
-							<Panel xmlns="sap.m">
-							<content>
-							<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text2" textAlign="Center"/>
-							</content>
-						</Panel>
-							<Text xmlns="sap.m" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet." id="text0" textAlign="Center"/>
-						</items>
+						<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
+							<items>
+								<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px"
+									id="image0"/>
+								<Panel xmlns="sap.m">
+									<content>
+										<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text2" textAlign="Center"/>
+									</content>
+								</Panel>
+								<Text xmlns="sap.m"
+									text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+									id="text0" textAlign="Center"/>
+							</items>
 						</VBox>
 						<Bar busyIndicatorSize="Small">
-					<contentMiddle>
-					<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
-					<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Registrieren" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Registrieren'\}\}\}"/>
-					</contentMiddle>	
-					</Bar>
+							<contentMiddle>
+								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button1"
+									press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
+								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Registrieren" id="button0"
+									press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Registrieren'\}\}\}"/>
+							</contentMiddle>
+						</Bar>
 						<Bar id="bar1">
-						<contentRight>
-						    <Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0">
-						        <items>
-						            <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
-						            <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
-						            <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Meine Bestellungen" id="item2"/>
-						            <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Abmelden" id="item3"/>
-						            </items>
-						    </Select>
-						</contentRight>
-						</Bar>	
+							<contentRight>
+								<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0">
+									<items>
+										<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
+										<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
+										<core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Meine Bestellungen" id="item2"/>
+										<core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Abmelden" id="item3"/>
+									</items>
+								</Select>
+							</contentRight>
+						</Bar>
 					</content>
 				</Page>
 			</pages>
