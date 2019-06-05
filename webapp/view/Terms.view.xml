@@ -1,7 +1,7 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Adresse">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Terms">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Terms">
 				<content>
 									    <Bar id="bar1">
 				    <contentRight>
@@ -19,6 +19,7 @@
 				        <Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 				    </contentLeft>
 				    </Bar>
+				    <Text xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
 				</content>
 			</Page>
 		</pages>
