@@ -1,0 +1,35 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Startseite">
+	<App>
+		<pages><Page title="myhelper">
+			<customHeader>
+			</customHeader>
+			<headerContent>
+			<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action" action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
+						        <items>
+						            <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
+						            <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
+						            <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Meine Bestellungen" id="item2"/>
+						            <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Abmelden" id="item3"/>
+						            </items>
+						    </Select>
+			</headerContent>
+			<content>
+			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+			        <sap.ui.layout:content>
+			            <ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label" type="Active" title="Malerei &amp; Lackiererei " id="item1_1559663806083" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Dl_Uebersicht'\}\}\}" icon="sap-icon://palette">
+			               </ObjectListItem>
+			            <ObjectListItem type="Active" title="Sanitär &amp; Heizungsbau" id="item0_1559663888071" icon="sap-icon://wrench">
+						</ObjectListItem>
+			            <ObjectListItem type="Active" title="Umzüge &amp; Räumungen" id="item1_1559663889956" icon="sap-icon://shipping-status">
+						</ObjectListItem>
+						            <ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Active" title="Unsere Partnerunternehmen" numberUnit="eur" id="item2_1559663891583" icon="sap-icon://leads" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Partnerunternehmen'\}\}\}">
+						            	
+						</ObjectListItem>
+			            <InputListItem type="Navigation" id="item4" label="myhelper Team"/>
+			            <InputListItem type="Navigation" id="item5" label="myhelper"/></sap.ui.layout:content>
+			    </sap.ui.layout:Grid>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

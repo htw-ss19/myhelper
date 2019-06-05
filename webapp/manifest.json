@@ -1,22 +1,20 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"_version": "1.3.0",
-		"id": "myhelper",
+		"id": "myhelper.myhelper",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
-		"title": "MyHelper",
-		"description": "finde dein...",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
 		}
 	},
 	"sap.ui": {
-		"_version": "1.3.0",
 		"technology": "UI5",
 		"icons": {
 			"icon": "",
@@ -33,12 +31,12 @@
 		}
 	},
 	"sap.ui5": {
-		"_version":"1.2.0",
+		"flexEnabled": false,
 		"rootView": {
-			"viewName": "uc.UserCkeck.view.View1",
+			"viewName": "myhelper.myhelper.view.Home",
 			"type": "XML",
 			"async": true,
-			"id": "View1"
+			"id": "Home"
 		},
 		"dependencies": {
 			"minUI5Version": "1.60.1",
@@ -56,37 +54,178 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "uc.UserCkeck.i18n.i18n"
+					"bundleName": "myhelper.myhelper.i18n.i18n"
 				}
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "uc.UserCkeck.view",
+				"viewPath": "myhelper.myhelper.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteView1",
-				"pattern": "RouteView1",
-				"target": ["TargetView1"]
-			}],
+			"routes": [
+				{
+					"name": "RouteHome",
+					"pattern": "RouteHome",
+					"target": [
+						"TargetHome"
+					]
+				},
+				{
+					"name": "Login",
+					"pattern": "Login",
+					"target": [
+						"Login"
+					]
+				},
+				{
+					"name": "Registrieren",
+					"pattern": "Registrieren",
+					"target": [
+						"Registrieren"
+					]
+				},
+				{
+					"name": "Startseite",
+					"pattern": "Startseite",
+					"target": [
+						"Startseite"
+					]
+				},
+				{
+					"name": "Bestellbestaetigung",
+					"pattern": "Bestellbestaetigung",
+					"target": [
+						"Bestellbestaetigung"
+					]
+				},
+				{
+					"name": "Home",
+					"pattern": "Home",
+					"target": [
+						"TargetHome"
+					]
+				},
+				{
+					"name": "U_Uebersicht",
+					"pattern": "U_Uebersicht",
+					"target": [
+						"U_Uebersicht"
+					]
+				},
+				{
+					"name": "Dl_Uebersicht",
+					"pattern": "Dl_Uebersicht",
+					"target": [
+						"Dl_Uebersicht"
+					]
+				},
+				{
+					"name": "Unternehmen",
+					"pattern": "Unternehmen",
+					"target": [
+						"Unternehmen"
+					]
+				},
+				{
+					"name": "Partnerunternehmen",
+					"pattern": "Partnerunternehmen",
+					"target": [
+						"Partnerunternehmen"
+					]
+				}
+			],
 			"targets": {
-				"TargetView1": {
+				"TargetHome": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewId": "View1",
-					"viewName": "View1"
+					"viewId": "Home",
+					"viewName": "Home"
+				},
+				"Login": {
+					"viewType": "XML",
+					"viewName": "Login"
+				},
+				"Registrieren": {
+					"viewType": "XML",
+					"viewName": "Registrieren"
+				},
+				"Adresse": {
+					"viewType": "XML",
+					"viewName": "Adresse"
+				},
+				"Bestellbestaetigung": {
+					"viewType": "XML",
+					"viewName": "Bestellbestaetigung"
+				},
+				"Contact": {
+					"viewType": "XML",
+					"viewName": "Contact"
+				},
+				"Dl_Uebersicht": {
+					"viewType": "XML",
+					"viewName": "Dl_Uebersicht"
+				},
+				"Kalender": {
+					"viewType": "XML",
+					"viewName": "Kalender"
+				},
+				"Partnerunternehmen": {
+					"viewType": "XML",
+					"viewName": "Partnerunternehmen"
+				},
+				"Privacy": {
+					"viewType": "XML",
+					"viewName": "Privacy"
+				},
+				"Security": {
+					"viewType": "XML",
+					"viewName": "Security"
+				},
+				"Terms": {
+					"viewType": "XML",
+					"viewName": "Terms"
+				},
+				"U_Uebersicht": {
+					"viewType": "XML",
+					"viewName": "U_Uebersicht"
+				},
+				"Unternehmen": {
+					"viewType": "XML",
+					"viewName": "Unternehmen"
+				},
+				"Zahlungsart": {
+					"viewType": "XML",
+					"viewName": "Zahlungsart"
+				},
+				"Startseite": {
+					"viewType": "XML",
+					"viewName": "Startseite"
+				},
+				"Mein_Profil": {
+					"viewType": "XML",
+					"viewName": "Mein_Profil"
+				},
+				"Meine_Profileinstellungen": {
+					"viewType": "XML",
+					"viewName": "Meine_Profileinstellungen"
+				},
+				"Meine_Bestellungen": {
+					"viewType": "XML",
+					"viewName": "Meine_Bestellungen"
 				}
 			}
 		}

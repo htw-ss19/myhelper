@@ -1,14 +1,14 @@
 sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
-	return Controller.extend("myhelper.myhelper.controller.Login", {
+	return Controller.extend("myhelper.myhelper.controller.Kalender", {
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
-		 * @memberOf myhelper.myhelper.view.Login
+		 * @memberOf myhelper.myhelper.view.Kalender
 		 */
 		onInit: function () {},
 		/**
-		 *@memberOf myhelper.myhelper.controller.Login
+		 *@memberOf myhelper.myhelper.controller.Kalender
 		 */
 		action: function (oEvent) {
 			var that = this;

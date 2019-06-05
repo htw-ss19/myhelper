@@ -1,44 +1,40 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
-	<Shell>
-		<App>
-			<pages>
-				<Page title="{i18n>homePageTitle}">
-					<content>
-						<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="logo"/>
-						<Panel headerText="{i18n>helloPanelTitle}">
-							<content>
-								<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="loginForm">
-									<sap.ui.layout.form:formContainers>
-										<sap.ui.layout.form:FormContainer title="Title" id="container">
-											<sap.ui.layout.form:formElements>
-												<sap.ui.layout.form:FormElement label="Benutzername/E-Mail" id="benutzerLabel">
-													<sap.ui.layout.form:fields>
-														<Input width="100%" id="emailLogin"/>
-													</sap.ui.layout.form:fields>
-												</sap.ui.layout.form:FormElement>
-												<sap.ui.layout.form:FormElement label="Password" id="passwordLabel">
-													<sap.ui.layout.form:fields>
-														<Input width="100%" id="passwordLogin"/>
-													</sap.ui.layout.form:fields>
-												</sap.ui.layout.form:FormElement>
-											</sap.ui.layout.form:formElements>
-										</sap.ui.layout.form:FormContainer>
-									</sap.ui.layout.form:formContainers>
-									<sap.ui.layout.form:layout>
-										<sap.ui.layout.form:ResponsiveGridLayout id="layout"/>
-									</sap.ui.layout.form:layout>
-								</sap.ui.layout.form:Form><Button xmlns="sap.m" text="Anmelden" id="login_btn_index"/>
-							</content>
-						</Panel>
-						<Panel>
-							<content>
-								<Text xmlns="sap.m" text="Noch nicht regestriert?" id="regesText"/><Button xmlns="sap.m" text="Regestieren" id="reges_btn"/>
-							</content>
-						</Panel>
-						<Text xmlns="sap.m" text="Terms | Privacy | Security | Contact" id="infobar"/>
-					</content>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Login">
+	<App>
+		<pages><Page title="myhelper - Login">
+				<content>
+				    <VBox justifyContent="Center" alignItems="Center" alignContent="Center" width="100%" direction="Column" id="vbox0">
+				        <items><Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+				        </items>
+				    </VBox>
+				    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+				        <sap.ui.layout.form:formContainers>
+				            <sap.ui.layout.form:FormContainer id="container0">
+				                <sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement label="E-Mail Adresse" id="element2">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="60%" id="input2"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Passwort" id="element1">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="60%" id="input1"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                </sap.ui.layout.form:formElements>
+				            </sap.ui.layout.form:FormContainer>
+				        </sap.ui.layout.form:formContainers>
+				        <sap.ui.layout.form:layout>
+				            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+				        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+				        
+				        <Bar id="bar3">
+				        <contentMiddle>
+
+				        <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+
+				        </contentMiddle>
+				    </Bar>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>

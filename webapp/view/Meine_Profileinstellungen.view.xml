@@ -1,9 +1,10 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Adresse">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="myhelper.myhelper.controller.Meine_Profileinstellungen" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
 			<Page title="Title">
 				<content>
-									    <Bar id="bar1">
+														    <Bar id="bar1">
 				    <contentRight>
 				        <ComboBox xmlns="sap.m" id="box0" placeholder="Mein Benutzer">
 				                <items>
@@ -19,6 +20,7 @@
 				        <Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 				    </contentLeft>
 				    </Bar>
+				    <Text xmlns="sap.m" text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
 				</content>
 			</Page>
 		</pages>
