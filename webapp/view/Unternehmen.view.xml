@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Unternehmen">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Unterenhmen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>

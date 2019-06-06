@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Zahlungsart">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Zahlungsart">
 				<content>
 					<Bar id="bar1">
 						<contentRight>

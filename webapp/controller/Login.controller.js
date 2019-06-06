@@ -6,7 +6,16 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf myhelper.myhelper.view.Login
 		 */
-		onInit: function () {},
+		onInit: function () {		
+			// var oEmail = this.getView().byId("emailInput").getValue();
+			// var oPassword = this.getView().byId("passwordInput").getValue();
+			// create JSON model instance
+			// var oModel = new sap.ui.model.json.JSONModel();
+			// set the data for the model
+			// oModel.dataLoaded("json/customer.json");
+			// set the model to the core
+			// sap.ui.getCore().setModel(oModel);
+			},
 		/**
 		 *@memberOf myhelper.myhelper.controller.Login
 		 */

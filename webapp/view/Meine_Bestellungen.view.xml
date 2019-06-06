@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Meine_Bestellungen" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Meine Bestellungen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
