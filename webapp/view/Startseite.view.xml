@@ -1,12 +1,10 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="myhelper.myhelper.controller.Startseite">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Startseite">
 	<App>
 		<pages>
 			<Page title="myhelper">
-				<customHeader></customHeader>
+				<customHeader/>
 				<headerContent>
-					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action"
-						action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
+					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action" action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
 						<items>
 							<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
 							<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
@@ -16,33 +14,33 @@
 					</Select>
 				</headerContent>
 				<content>
+					<Bar class="sapContrastPlus" id="bar2" design="Header">
+					    <contentMiddle>
+					        <Text xmlns="sap.m" text="Willkommen bei myhelper" id="text65"/>
+					    </contentMiddle>
+					<contentLeft>
+					    <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"/>
+					</contentLeft>
+					</Bar>
 					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
 						<sap.ui.layout:content>
-							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label"
-								type="Active" title="Malerei &amp; Lackiererei " id="item1_1559663806083" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Dl_Uebersicht'\}\}\}" icon="sap-icon://palette"></ObjectListItem>
-							<ObjectListItem type="Active" title="Sanitär &amp; Heizungsbau" id="item0_1559663888071" icon="sap-icon://wrench"></ObjectListItem>
-							<ObjectListItem type="Active" title="Umzüge &amp; Räumungen" id="item1_1559663889956" icon="sap-icon://shipping-status"></ObjectListItem>
-							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Active"
-								title="Unsere Partnerunternehmen" numberUnit="eur" id="item2_1559663891583" icon="sap-icon://leads" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Partnerunternehmen'\}\}\}"></ObjectListItem>
-							<InputListItem type="Navigation" id="item4" label="myhelper Team"/>
+							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label" type="Active" title="Malerei &amp; Lackiererei " id="item1_1559663806083" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Dl_Uebersicht'\}\}\}" icon="sap-icon://palette"/>
+							<ObjectListItem type="Active" title="Sanitär &amp; Heizungsbau" id="item0_1559663888071" icon="sap-icon://wrench"/>
+							<ObjectListItem type="Active" title="Umzüge &amp; Räumungen" id="item1_1559663889956" icon="sap-icon://shipping-status"/>
+							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Active" title="Unsere Partnerunternehmen" numberUnit="eur" id="item2_1559663891583" icon="sap-icon://leads" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Partnerunternehmen'\}\}\}"/>
+							<InputListItem type="Navigation" id="item4" label="myhelper Team" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Team'\}\}\}"/>
 							<InputListItem type="Navigation" id="item5" label="myhelper"/></sap.ui.layout:content>
 					</sap.ui.layout:Grid>
 					
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 							<Text xmlns="sap.m" text="|" id="text1"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
-								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 						</contentMiddle>
 					</Bar>
 				</content>

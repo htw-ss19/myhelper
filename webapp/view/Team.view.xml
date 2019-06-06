@@ -1,7 +1,7 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Passwort">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Team">
 	<App>
 		<pages>
-			<Page title="myhelper - Passwort zurücksetzen">
+			<Page title="myhelper Team">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -19,14 +19,19 @@
 						</contentLeft>
 					</Bar>
 					<Bar id="bar1_1559825145463">
-					    <contentLeft>
-					        <Text xmlns="sap.m" text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
-					    </contentLeft>
+						<contentLeft>
+							<Text xmlns="sap.m" text="Julia Gruber" id="text0"/>
+						</contentLeft>
+					<contentMiddle>
+					    <Text xmlns="sap.m" text="Doreen Gade" id="text0_1559825782929"/>
+					</contentMiddle>
+					<contentRight><Text xmlns="sap.m" text="Fatema Mohamed" id="text1_1559825791374"/>
+					</contentRight>
 					</Bar>
 					<Bar id="bar2">
-					    <contentMiddle>
-					        <Button xmlns="sap.m" text="Startseite" id="button0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
-					    </contentMiddle>
+						<contentMiddle>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Startseite" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+						</contentMiddle>
 					</Bar>
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>

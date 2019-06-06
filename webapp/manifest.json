@@ -180,6 +180,13 @@
 					"target": [
 						"Passwort"
 					]
+				},
+				{
+					"name": "Team",
+					"pattern": "Team",
+					"target": [
+						"Team"
+					]
 				}
 			],
 			"targets": {
@@ -265,6 +272,10 @@
 				"Passwort": {
 					"viewType": "XML",
 					"viewName": "Passwort"
+				},
+				"Team": {
+					"viewType": "XML",
+					"viewName": "Team"
 				}
 			}
 		}
