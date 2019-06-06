@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Dl_Uebersicht">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Dienstleistungsübersicht">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -21,7 +21,7 @@
 								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
 					</Bar>
-					>
+					
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
 							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"

@@ -1,7 +1,7 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Unternehmen">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Passwort">
 	<App>
 		<pages>
-			<Page title="Unterenhmen">
+			<Page title="myhelper - Passwort zurücksetzen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -14,18 +14,20 @@
 								</items>
 							</ComboBox>
 						</contentRight>
-						<contentLeft><Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+						<contentLeft>
+							<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
 					</Bar>
-					
-					<VBox width="100%" direction="Column" id="vbox0">
-					
-					    <items>
-					
-					    </items>
-					
-					</VBox>
-					
+					<Bar id="bar1_1559825145463">
+					    <contentLeft>
+					        <Text xmlns="sap.m" text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
+					    </contentLeft>
+					</Bar>
+					<Bar id="bar2">
+					    <contentMiddle>
+					        <Button xmlns="sap.m" text="Startseite" id="button0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+					    </contentMiddle>
+					</Bar>
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
 							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>

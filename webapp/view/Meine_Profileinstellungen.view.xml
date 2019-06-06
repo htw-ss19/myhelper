@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Meine_Profileinstellungen" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Meine Profileinstellungen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -22,7 +22,7 @@
 						</contentLeft>
 					</Bar>
 					<Text xmlns="sap.m" text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
-					>
+					
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
 							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
