@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.U_Uebersicht">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Unternehmensübersicht">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
