@@ -1,14 +1,9 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-<<<<<<< HEAD
 		"id": "myhelper.myhelper",
-=======
-		"_version": "1.3.0",
-		"id": "myhelper",
-		"title": "{{MyHelper}}",
->>>>>>> stash
 		"type": "application",
+		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
@@ -185,6 +180,13 @@
 					"target": [
 						"Passwort"
 					]
+				},
+				{
+					"name": "Team",
+					"pattern": "Team",
+					"target": [
+						"Team"
+					]
 				}
 			],
 			"targets": {
@@ -270,6 +272,10 @@
 				"Passwort": {
 					"viewType": "XML",
 					"viewName": "Passwort"
+				},
+				"Team": {
+					"viewType": "XML",
+					"viewName": "Team"
 				}
 			}
 		}
