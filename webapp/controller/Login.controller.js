@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
-=======
-sap.ui.define(["sap/ui/core/mvc/Controller",
-   "sap/ui/model/resource/ResourceModel"
-],
- function (Controller) {
->>>>>>> stash
 	"use strict";
-<<<<<<< HEAD
 	return Controller.extend("myhelper.myhelper.controller.Login", {
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -23,15 +15,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			// oModel.dataLoaded("json/customer.json");
 			// set the model to the core
 			// sap.ui.getCore().setModel(oModel);
-=======
-	return Controller.extend("myhelper.webapp.controller.Login", {
-		checkUser: function (oEvent) {
-			var user = this.byId("emailLogin").getValue();
-			this.byId("password").getValue();
-			sap.m.MessageToast.show("Benutzername/E-Mail " + user + " " + this._validateUser(user));
->>>>>>> stash
 		},
-<<<<<<< HEAD
 		/**
 		 *@memberOf myhelper.myhelper.controller.Login
 		 */
@@ -65,16 +49,6 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 					this.getOwnerComponent().getRouter().navTo(oNavigation.routeName);
 				}
 			}
-=======
-		_validateUser: function (sUserName) {
-			var aUsers = ["Max", "Jana", "Thomas"]; // should retrieved from somewhere, e.g., JSON file or Model
-			return aUsers.indexOf(sUserName) > -1;
-		},
-		_openHome: function() {
-		sap.ui.view({id:"",viewName:"myhelper.webapp.view.Home",
-		typ:sap.ui.core.mvc.ViewTyp.Js
-		});
->>>>>>> stash
 		}
 	});
 });
