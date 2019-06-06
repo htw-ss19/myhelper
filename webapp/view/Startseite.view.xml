@@ -13,8 +13,7 @@
 						</items>
 					</Select>
 				</headerContent>
-				<content>
-					<Bar class="sapContrastPlus" id="bar2" design="Header">
+				<content><Bar class="sapContrastPlus" id="bar2" design="Header">
 					    <contentMiddle>
 					        <Text xmlns="sap.m" text="Willkommen bei myhelper" id="text65"/>
 					    </contentMiddle>
@@ -28,7 +27,7 @@
 							<ObjectListItem type="Active" title="Sanitär &amp; Heizungsbau" id="item0_1559663888071" icon="sap-icon://wrench"/>
 							<ObjectListItem type="Active" title="Umzüge &amp; Räumungen" id="item1_1559663889956" icon="sap-icon://shipping-status"/>
 							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Active" title="Unsere Partnerunternehmen" numberUnit="eur" id="item2_1559663891583" icon="sap-icon://leads" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Partnerunternehmen'\}\}\}"/>
-							<InputListItem type="Navigation" id="item4" label="myhelper Team" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Team'\}\}\}"/>
+							<InputListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Navigation" id="item4" label="myhelper Team" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Team'\}\}\}"/>
 							<InputListItem type="Navigation" id="item5" label="myhelper"/></sap.ui.layout:content>
 					</sap.ui.layout:Grid>
 					
