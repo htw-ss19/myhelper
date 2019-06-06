@@ -33,6 +33,22 @@
 							<InputListItem type="Navigation" id="item6" label="myhelper Team"/>
 							<InputListItem type="Navigation" id="item7" label="myhelper"/></sap.ui.layout:content>
 					</sap.ui.layout:Grid>
+					>
+					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+						<contentMiddle>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Text xmlns="sap.m" text="|" id="text1"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
+								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+						</contentMiddle>
+					</Bar>
 				</content>
 			</Page>
 		</pages>

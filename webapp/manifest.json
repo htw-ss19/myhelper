@@ -145,6 +145,34 @@
 					"target": [
 						"Partnerunternehmen"
 					]
+				},
+				{
+					"name": "Terms",
+					"pattern": "Terms",
+					"target": [
+						"Terms"
+					]
+				},
+				{
+					"name": "Privacy",
+					"pattern": "Privacy",
+					"target": [
+						"Privacy"
+					]
+				},
+				{
+					"name": "Security",
+					"pattern": "Security",
+					"target": [
+						"Security"
+					]
+				},
+				{
+					"name": "Contact",
+					"pattern": "Contact",
+					"target": [
+						"Contact"
+					]
 				}
 			],
 			"targets": {
