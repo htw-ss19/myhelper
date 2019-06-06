@@ -173,6 +173,20 @@
 					"target": [
 						"Contact"
 					]
+				},
+				{
+					"name": "Passwort",
+					"pattern": "Passwort",
+					"target": [
+						"Passwort"
+					]
+				},
+				{
+					"name": "Team",
+					"pattern": "Team",
+					"target": [
+						"Team"
+					]
 				}
 			],
 			"targets": {
@@ -254,6 +268,14 @@
 				"Meine_Bestellungen": {
 					"viewType": "XML",
 					"viewName": "Meine_Bestellungen"
+				},
+				"Passwort": {
+					"viewType": "XML",
+					"viewName": "Passwort"
+				},
+				"Team": {
+					"viewType": "XML",
+					"viewName": "Team"
 				}
 			}
 		}
