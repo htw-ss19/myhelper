@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Login">
+	<App>
+		<pages>
+			<Page title="myhelper - Login">
+				<content>
+					<VBox justifyContent="Center" alignItems="Center" alignContent="Center" width="100%" direction="Column" id="vbox0">
+						<items><Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+						</items>
+					</VBox>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="container0">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="E-Mail Adresse" id="element2">
+										<sap.ui.layout.form:fields>
+											<Input width="60%" id="emailInput"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Passwort" id="element1">
+										<sap.ui.layout.form:fields>
+											<Input width="60%" id="passwordInput"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+					<Bar id="bar3">
+						<contentMiddle>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+						</contentMiddle>
+					<contentRight>
+					</contentRight>
+					</Bar>
+					<Bar id="bar0">
+					    <contentMiddle>
+					        <Link xmlns="sap.m" text="Passwort vergessen?" id="link0_1559823189762" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Passwort'\}\}\}"/>
+					    </contentMiddle>
+					</Bar>
+					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+						<contentMiddle>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Text xmlns="sap.m" text="|" id="text1"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+						</contentMiddle>
+					</Bar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
+=======
 <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="myhelper.webapp.controller.Login" displayBlock="false">
 		<App>
 			<pages>
@@ -40,3 +100,4 @@
 			</pages>
 		</App>
 </mvc:View>
+>>>>>>> stash

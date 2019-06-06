@@ -1,0 +1,46 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="myhelper.myhelper.controller.Contact">
+	<App>
+		<pages>
+			<Page title="Contact">
+				<content>
+					<Bar id="bar1">
+						<contentRight>
+							<ComboBox xmlns="sap.m" id="box0" placeholder="Mein Benutzer">
+								<items>
+									<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Mein Profil" id="item2"/>
+									<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Meine Profileinstellungen" id="item3"/>
+									<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="Meine Bestellungen" id="item4"/>
+									<core:Item xmlns:core="sap.ui.core" key="item-4-key" text="Abmelden" id="item5"/>
+								</items>
+							</ComboBox>
+						</contentRight>
+						<contentLeft>
+							<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"
+								press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+						</contentLeft>
+					</Bar>
+					<Text xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m"
+						text="Diese Seite befindet sich im Aufbau und wird zu einem späteren Zeitpunkt implementiert." id="text0"/>
+					
+					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+						<contentMiddle>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Text xmlns="sap.m" text="|" id="text1"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
+								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+						</contentMiddle>
+					</Bar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

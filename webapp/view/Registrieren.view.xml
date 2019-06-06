@@ -1,95 +1,131 @@
-<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="false">
-	<Shell>
-		<App>
-			<pages><Page>
-					<content>
-						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
-							<sap.ui.layout.form:formContainers>
-								<sap.ui.layout.form:FormContainer id="container1">
-									<sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement label="Anrede" id="anrede_lable">
-										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="anrede_box" maxWidth="45%">
-										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item4"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item5"/>
-										                </items>
-										            
-										        </ComboBox>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Titel" id="title_label">
-										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="titel_box" maxWidth="45%">
-										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item48"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item49"/>
-										                </items>
-										            
-										        </ComboBox>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Vorname" id="firstname_lable">
-											<sap.ui.layout.form:fields>
-												<Input width="100%" id="firstname_input"/>
-											</sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Nachname" id="lastname_label">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="lastname_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Straße" id="element3">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="stree_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Hausnummer" id="element0">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="number_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Land" id="element0_1558278276262">
-										    <sap.ui.layout.form:fields>
-										        <ComboBox xmlns="sap.m" id="country_box">
-										            <items>
-										                <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Item 1 Text" id="item16"/>
-										                <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Item 2 Text" id="item17"/>
-										                </items>
-										            
-										        </ComboBox>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Label" id="element6">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="input6"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="E-Mail" id="email_label">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="email_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-										<sap.ui.layout.form:FormElement label="Password" id="password_label">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="password_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-												<sap.ui.layout.form:FormElement label="Password wiederholen" id="password_again_label">
-										    <sap.ui.layout.form:fields>
-										        <Input width="100%" id="password_again_input"/>
-										    </sap.ui.layout.form:fields>
-										</sap.ui.layout.form:FormElement>
-									</sap.ui.layout.form:formElements>
-								</sap.ui.layout.form:FormContainer>
-							</sap.ui.layout.form:formContainers>
-							<sap.ui.layout.form:layout>
-								<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
-							</sap.ui.layout.form:layout>
-						</sap.ui.layout.form:Form>
-						<Button xmlns="sap.m" text="Button" id="button0"/>
-					</content>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="myhelper.myhelper.controller.Registrieren">
+	<App>
+		<pages>
+			<Page title="Registieren">
+				<content>
+					<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
+						<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+					</VBox>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="container1">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Anrede" id="element11">
+										<sap.ui.layout.form:fields>
+											<ComboBox xmlns="sap.m" id="box0" maxWidth="25%">
+												<items>
+													<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="männlich" id="item0"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="weiblich" id="item1"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="divers" id="item2"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-4-key" text="kein.ActionSelecte Angabe" id="item3"/>
+												</items>
+											</ComboBox>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Titel" id="element10">
+										<sap.ui.layout.form:fields>
+											<ComboBox xmlns="sap.m" id="box1" maxWidth="25%">
+												<items>
+													<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Prof." id="item17"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Dr." id="item18"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="Prof. Dr." id="item19"/>
+												</items>
+											</ComboBox>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Vorname" id="element9">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input9"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Nachname" id="element8">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input8"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Straße" id="element7">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input7"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Hausnummer" id="element6">
+										<sap.ui.layout.form:fields>
+											<Input width="25%" id="input6"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="PLZ" id="element4">
+										<sap.ui.layout.form:fields>
+											<Input width="25%" id="input4"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Stadt" id="element14">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input14"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Land" id="element1">
+										<sap.ui.layout.form:fields>
+											<ComboBox xmlns="sap.m" id="box0_1559639043402" maxWidth="80%">
+												<items>
+													<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Deutschland" id="item14"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Österreich" id="item15"/>
+													<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="Schweiz" id="item16"/>
+												</items>
+											</ComboBox>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="E-Mail" id="element2">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input2"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="E-Mail bestätigen" id="element3">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input3"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Passwort" id="element4_1559059415663">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input4_1559059415662"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+									<sap.ui.layout.form:FormElement label="Passwort wiederholen" id="element0">
+										<sap.ui.layout.form:fields>
+											<Input width="80%" id="input0"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+					<Bar id="bar2">
+						<contentMiddle>
+							<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Registrierung abschließen"
+								id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
+						</contentMiddle>
+					</Bar>
+					
+					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+						<contentMiddle>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Text xmlns="sap.m" text="|" id="text1"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
+								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+						</contentMiddle>
+					</Bar>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>

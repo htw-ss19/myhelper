@@ -1,0 +1,28 @@
+{
+  "Customers": [
+	{
+	  "E-Mail": "tim.mueller@gmail.com",
+	  "Vorname":"Tim",
+	  "Nachname": "Müller",
+	  "Straße": "Hauptstraße",
+	  "Hausnummer": "5d",
+	  "Postleitzahl":"10317",
+	  "Adresszusatz":"",
+	  "Statd":"Berlin",
+	  "Land":"Deutschland",
+	  "Passwort":"tim2312"
+	},
+	{
+	  "E-Mail": "sophia.adler@web.de",
+	  "Vorname":"Sophia",
+	  "Nachname": "Adler",
+	  "Straße": "Schützenhüttenweg",
+	  "Hausnummer": "40",
+	  "Postleitzahl":"60598",
+	  "Adresszusatz":"",
+	  "Statd":"Frankfurt am Main",
+	  "Land":"Deutschland",
+	  "Passwort":"Fm923!jska"
+	}
+  ]
+}
