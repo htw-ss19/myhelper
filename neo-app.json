@@ -9,7 +9,6 @@
         "entryPath": "/resources"
       },
       "description": "SAPUI5 Resources"
-<<<<<<< HEAD
     },
     {
       "path": "/test-resources",
@@ -19,8 +18,6 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
-=======
->>>>>>> stash
     }
   ],
   "sendWelcomeFileRedirect": true
