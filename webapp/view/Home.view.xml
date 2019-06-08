@@ -6,7 +6,7 @@
 					<content>
 						<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
 							<items>
-								<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px"
+								<Image xmlns="sap.m" src="./img/myhelperLogo.png" width="140px" height="140px"
 									id="image0"/>
 								<Panel xmlns="sap.m">
 									<content>

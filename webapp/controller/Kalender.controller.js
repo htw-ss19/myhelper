@@ -7,7 +7,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 		 * @memberOf myhelper.myhelper.view.Kalender
 		 */
 		onInit: function () {
-			
+		
 		},
 		/**
 		 *@memberOf myhelper.myhelper.controller.Kalender

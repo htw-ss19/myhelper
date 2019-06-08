@@ -21,7 +21,7 @@
 							<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text65"/>
 						</contentMiddle>
 						<contentLeft>
-							<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"/>
+							<Image src="./img/myhelperLogo.png" width="50px" height="50px" id="image0"/>
 						</contentLeft>
 					</Bar>
 					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">

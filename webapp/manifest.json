@@ -175,6 +175,24 @@
 					"target": [
 						"Kalender"
 					]
+				}, {
+					"name": "Zahlungsart",
+					"pattern": "Zahlungsart",
+					"target": [
+						"Zahlungsart"
+					]
+				}, {
+					"name": "Adresse",
+					"pattern": "Adresse",
+					"target": [
+						"Adresse"
+					]
+				}, {
+					"name": "Bestellbestaetigung",
+					"pattern": "Bestellbestaetigung",
+					"target": [
+						"Bestellbestaetigung"
+					]
 				}
 
 			],

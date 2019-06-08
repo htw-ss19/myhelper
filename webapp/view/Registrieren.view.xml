@@ -5,7 +5,7 @@
 			<Page title="myhelper">
 				<content>
 					<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
-						<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
+						<Image src="./img/myhelperLogo.png" width="140px" height="140px" id="image0"/>
 					</VBox>
 					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
 						<sap.ui.layout.form:formContainers>

@@ -15,7 +15,7 @@
 							</ComboBox>
 						</contentRight>
 						<contentLeft>
-							<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+							<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="./img/myhelperLogo.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
 					</Bar>
 					<Bar id="bar1_1559825145463">
