@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Login">
 	<App>
 		<pages>
-			<Page title="myhelper - Login">
+			<Page title="myhelper - Login" >
 				<content>
 					<VBox justifyContent="Center" alignItems="Center" alignContent="Center" width="100%" direction="Column" id="vbox0">
 						<items><Image src="./img/myhelperLogo.png" width="140px" height="140px" id="image0"/>

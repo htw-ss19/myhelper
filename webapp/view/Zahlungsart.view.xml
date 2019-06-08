@@ -1,54 +1,55 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Zahlungsart">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="myhelper.myhelper.controller.Unternehmen">
 	<App>
-		<pages><Page title="Zahlungsart">
+		<pages>
+			<Page title="Zahlungsart auswählen" showNavButton="true">
+				<customHeader/>
+				<headerContent>
+					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action"
+						action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Meine Bestellungen" id="item2"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Abmelden" id="item3"/>
+						</items>
+					</Select>
+				</headerContent>
 				<content>
-					<Bar id="bar1">
-						<contentRight>
-							<ComboBox xmlns="sap.m" id="box0" placeholder="Mein Benutzer">
-								<items>
-									<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Mein Profil" id="item2"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Meine Profileinstellungen" id="item3"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="Meine Bestellungen" id="item4"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-4-key" text="Abmelden" id="item5"/>
-								</items>
-							</ComboBox>
-						</contentRight>
+					<Bar class="sapContrastPlus" id="bar2" design="Header">
 						<contentLeft>
-						<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="./img/myhelperLogo.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+							<Image src="./img/myhelperLogo.png" width="50px" height="50px" id="image0"/>
 						</contentLeft>
-						
 					</Bar>
-					<VBox width="100%" direction="Column" id="vbox0">
-					    <items>
-					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image0_1559853009677"/>
-					        <Button xmlns="sap.m" id="button0" text="BARZAHLUNG" press="action"/>
-					    </items>
-					    <items>
-					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image2_1559853009677"/>
-					        <Button xmlns="sap.m" id="button1" text="PAYPAl" press="action"/>
-					    </items>
-					     <items>
-					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image1_1559853009677"/>
-					        <Button xmlns="sap.m" id="button2" text="Ueberweisung" press="action"/>
-					    </items>
-					     <items>
-					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image3_1559853009677"/>
-					        <Button xmlns="sap.m" id="button3" text="KREDITKARTEN" press="action"/>
-					    </items>
-					</VBox><Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+						<sap.ui.layout:content>
+							<sap.ui.layout:VerticalLayout width="100%" id="layout0">
+								<sap.ui.layout:content>
+									<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="button0" 
+									text="Barzahalung"  press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}"/>
+									<Button xmlns="sap.m" id="button1" text="PayPal" icon="./img/icon_paypal.png"/>
+									<Button xmlns="sap.m" id="button2" text="Überweisung"/>
+									<Button xmlns="sap.m" id="button3" text="Kreditkarte"/>
+								</sap.ui.layout:content>
+							</sap.ui.layout:VerticalLayout>
+						</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
+					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 							<Text xmlns="sap.m" text="|" id="text1"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
+								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
+								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 						</contentMiddle>
 					</Bar>
 				</content>
-			<headerContent>
-			</headerContent>
 			</Page>
 		</pages>
 	</App>

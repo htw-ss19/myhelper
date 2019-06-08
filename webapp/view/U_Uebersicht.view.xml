@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.U_Uebersicht">
 	<App>
 		<pages>
-			<Page title="Unternehmensübersicht">
+			<Page title="Unternehmensübersicht" showNavButton="true">
 				<customHeader/>
 				<headerContent>
 					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action"

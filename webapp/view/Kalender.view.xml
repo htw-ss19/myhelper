@@ -1,12 +1,10 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="myhelper.myhelper.controller.Kalender">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Kalender">
 	<App>
 		<pages>
-			<Page title="Termin auwählen">
+			<Page title="Termin auwählen" showNavButton="true">
 				<customHeader/>
 				<headerContent>
-					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action"
-						action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
+					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action" action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
 						<items>
 							<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
 							<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
@@ -24,14 +22,12 @@
 					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
 						<sap.ui.layout:content>
 							<sap.ui.layout:VerticalLayout width="100%" id="layout0">
-								<DateTimePicker id="startDate" placeholder="Enter a crazy date and time, e.g. 23/01/12345" valueFormat="yyyy-MM-dd-HH-mm-ss"
-									validationError="valError" value="{ path: '/startdateraw', type: 'sap.ui.model.type.DateTime', strictParsing: 'true' }"/>
+								<DateTimePicker id="startDate" placeholder="Enter a crazy date and time, e.g. 23/01/12345" valueFormat="yyyy-MM-dd-HH-mm-ss" validationError="valError" value="{ path: '/startdateraw', type: 'sap.ui.model.type.DateTime', strictParsing: 'true' }"/>
 								<sap.ui.layout:content>
 									<sap.ui.layout:HorizontalLayout id="layout0_1560004649387">
 										<sap.ui.layout:content>
-											<Button xmlns="sap.m" text="Abbrechen" id="button1"/>
-											<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Übernehemen" id="button0"
-												press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Zahlungsart'\}\}\}"/>
+											<Button xmlns="sap.m" text="Abbrechen" id="button1" icon="sap-icon://decline"/>
+											<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Übernehemen" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Zahlungsart'\}\}\}" icon="sap-icon://accept"/>
 										</sap.ui.layout:content>
 									</sap.ui.layout:HorizontalLayout>
 								</sap.ui.layout:content>
@@ -40,17 +36,13 @@
 					</sap.ui.layout:Grid>
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 							<Text xmlns="sap.m" text="|" id="text1"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
-								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 						</contentMiddle>
 					</Bar>
 				</content>
