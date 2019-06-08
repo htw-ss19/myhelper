@@ -21,6 +21,14 @@
 								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
 					</Bar>
+					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+						<sap.ui.layout:content>
+							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label" type="Active" title="Anstreiche" id="item1_1559663806083" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Dl_Uebersicht'\}\}\}" />
+							<ObjectListItem type="Active" title="Schimmelsanierung" id="item0_1559663888071" />
+							<ObjectListItem type="Active" title="Lackierarbeit" id="item1_1559663889956" />
+							
+							</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
 					
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
