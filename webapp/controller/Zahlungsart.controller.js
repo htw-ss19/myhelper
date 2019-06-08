@@ -7,6 +7,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 		 * @memberOf myhelper.myhelper.view.Zahlungsart
 		 */
 		onInit: function () {},
+
 		/**
 		 *@memberOf myhelper.myhelper.controller.Zahlungsart
 		 */

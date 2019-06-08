@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Adresse">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Adresse auswählen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>

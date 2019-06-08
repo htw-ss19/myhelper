@@ -2,25 +2,36 @@
 	controllerName="myhelper.myhelper.controller.U_Uebersicht">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Unternehmensübersicht">
+				<customHeader/>
+				<headerContent>
+					<Select xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="select0" change="action"
+						action:wiring="\{'change':\{'navigation':\{'routeName':'Home'\}\}\}">
+						<items>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Mein Profil" id="item0"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Meine Profileinstellungen" id="item1"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-3" text="Meine Bestellungen" id="item2"/>
+							<core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Abmelden" id="item3"/>
+						</items>
+					</Select>
+				</headerContent>
 				<content>
-					<Bar id="bar1">
-						<contentRight>
-							<ComboBox xmlns="sap.m" id="box0" placeholder="Mein Benutzer">
-								<items>
-									<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Mein Profil" id="item2"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Meine Profileinstellungen" id="item3"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-3-key" text="Meine Bestellungen" id="item4"/>
-									<core:Item xmlns:core="sap.ui.core" key="item-4-key" text="Abmelden" id="item5"/>
-								</items>
-							</ComboBox>
-						</contentRight>
+					<Bar class="sapContrastPlus" id="bar2" design="Header">
+						<contentMiddle>
+							<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text65"/>
+						</contentMiddle>
 						<contentLeft>
-							<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"
-								press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+							<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"/>
 						</contentLeft>
 					</Bar>
+					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+						<sap.ui.layout:content>
+							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label"
+								type="Active" title="Malerei May" id="unternehmenMay" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+							<ObjectListItem type="Active" title="Morgan &amp; Marston Malerei" id="unternehemenMMM"/>
+							<ObjectListItem type="Active" title="Malereibetrieb Van Der Linde" id="unternehemVDL"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
 					
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>

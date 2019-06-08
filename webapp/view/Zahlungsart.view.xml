@@ -22,19 +22,19 @@
 					<VBox width="100%" direction="Column" id="vbox0">
 					    <items>
 					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image0_1559853009677"/>
-					        <Button xmlns="sap.m" id="button0" text="BARZAHLUNG"/>
+					        <Button xmlns="sap.m" id="button0" text="BARZAHLUNG" press="action"/>
 					    </items>
 					    <items>
 					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image2_1559853009677"/>
-					        <Button xmlns="sap.m" id="button1" text="PAYPAl"/>
+					        <Button xmlns="sap.m" id="button1" text="PAYPAl" press="action"/>
 					    </items>
 					     <items>
 					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image1_1559853009677"/>
-					        <Button xmlns="sap.m" id="button2" text="Ueberweisung"/>
+					        <Button xmlns="sap.m" id="button2" text="Ueberweisung" press="action"/>
 					    </items>
 					     <items>
 					        <Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="80px" height="80px" id="image3_1559853009677"/>
-					        <Button xmlns="sap.m" id="button3" text="KREDITKARTEN"/>
+					        <Button xmlns="sap.m" id="button3" text="KREDITKARTEN" press="action"/>
 					    </items>
 					</VBox><Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>

@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Kalender">
 	<App>
 		<pages>
-			<Page title="Title">
+			<Page title="Termin auwählen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
