@@ -59,11 +59,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -75,119 +73,110 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
+			"routes": [{
 					"name": "RouteHome",
 					"pattern": "RouteHome",
 					"target": [
 						"TargetHome"
 					]
-				},
-				{
+				}, {
 					"name": "Login",
 					"pattern": "Login",
 					"target": [
 						"Login"
 					]
-				},
-				{
+				}, {
 					"name": "Registrieren",
 					"pattern": "Registrieren",
 					"target": [
 						"Registrieren"
 					]
-				},
-				{
+				}, {
 					"name": "Startseite",
 					"pattern": "Startseite",
 					"target": [
 						"Startseite"
 					]
-				},
-				{
+				}, {
 					"name": "Bestellbestaetigung",
 					"pattern": "Bestellbestaetigung",
 					"target": [
 						"Bestellbestaetigung"
 					]
-				},
-				{
+				}, {
 					"name": "Home",
 					"pattern": "Home",
 					"target": [
 						"TargetHome"
 					]
-				},
-				{
+				}, {
 					"name": "U_Uebersicht",
 					"pattern": "U_Uebersicht",
 					"target": [
 						"U_Uebersicht"
 					]
-				},
-				{
+				}, {
 					"name": "Dl_Uebersicht",
 					"pattern": "Dl_Uebersicht",
 					"target": [
 						"Dl_Uebersicht"
 					]
-				},
-				{
+				}, {
 					"name": "Unternehmen",
 					"pattern": "Unternehmen",
 					"target": [
 						"Unternehmen"
 					]
-				},
-				{
+				}, {
 					"name": "Partnerunternehmen",
 					"pattern": "Partnerunternehmen",
 					"target": [
 						"Partnerunternehmen"
 					]
-				},
-				{
+				}, {
 					"name": "Terms",
 					"pattern": "Terms",
 					"target": [
 						"Terms"
 					]
-				},
-				{
+				}, {
 					"name": "Privacy",
 					"pattern": "Privacy",
 					"target": [
 						"Privacy"
 					]
-				},
-				{
+				}, {
 					"name": "Security",
 					"pattern": "Security",
 					"target": [
 						"Security"
 					]
-				},
-				{
+				}, {
 					"name": "Contact",
 					"pattern": "Contact",
 					"target": [
 						"Contact"
 					]
-				},
-				{
+				}, {
 					"name": "Passwort",
 					"pattern": "Passwort",
 					"target": [
 						"Passwort"
 					]
-				},
-				{
+				}, {
 					"name": "Team",
 					"pattern": "Team",
 					"target": [
 						"Team"
 					]
+				}, {
+					"name": "Kalender",
+					"pattern": "Kalender",
+					"target": [
+						"Kalender"
+					]
 				}
+
 			],
 			"targets": {
 				"TargetHome": {

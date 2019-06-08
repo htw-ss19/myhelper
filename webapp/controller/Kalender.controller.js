@@ -6,7 +6,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf myhelper.myhelper.view.Kalender
 		 */
-		onInit: function () {},
+		onInit: function () {
+			
+		},
 		/**
 		 *@memberOf myhelper.myhelper.controller.Kalender
 		 */

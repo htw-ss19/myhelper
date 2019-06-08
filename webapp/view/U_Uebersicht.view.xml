@@ -18,7 +18,6 @@
 				<content>
 					<Bar class="sapContrastPlus" id="bar2" design="Header">
 						<contentMiddle>
-							<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text65"/>
 						</contentMiddle>
 						<contentLeft>
 							<Image src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"/>
@@ -27,7 +26,7 @@
 					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
 						<sap.ui.layout:content>
 							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label"
-								type="Active" title="Malerei May" id="unternehmenMay" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+								type="Active" title="Malerei May" id="unternehmenMay" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Unternehmen'\}\}\}"/>
 							<ObjectListItem type="Active" title="Morgan &amp; Marston Malerei" id="unternehemenMMM"/>
 							<ObjectListItem type="Active" title="Malereibetrieb Van Der Linde" id="unternehemVDL"/>
 						</sap.ui.layout:content>
