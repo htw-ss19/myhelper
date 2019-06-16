@@ -19,8 +19,7 @@
 						</contentLeft>
 					</Bar>
 					<Bar id="bar1_1559825145463">
-						<contentLeft>
-							<Text xmlns="sap.m" text="Julia Gruber" id="text0"/>
+						<contentLeft><Text xmlns="sap.m" text="Julia Gruber" id="text0"/>
 						</contentLeft>
 					<contentMiddle>
 					    <Text xmlns="sap.m" text="Doreen Gade" id="text0_1559825782929"/>

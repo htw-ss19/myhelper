@@ -1,4 +1,4 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
+ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 	"use strict";
 	return Controller.extend("myhelper.myhelper.controller.Terms", {
 		/**
@@ -28,7 +28,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 			var oNavigation = actionParameters[eventType].navigation;
 			if (oNavigation) {
 				var oParams = {};
-				(oNavigation.keys || []).forEach(function (prop) {
+ 				(oNavigation.keys || []).forEach(function (prop) {
 					oParams[prop.name] = encodeURIComponent(JSON.stringify({
 						value: oEvent.getSource().getBindingContext(oNavigation.model).getProperty(prop.name),
 						type: prop.type

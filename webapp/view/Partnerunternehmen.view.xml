@@ -1,7 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Partnerunternehmen">
 	<App>
-		<pages>
-			<Page title="Unsere Partnerunternehmen">
+		<pages><Page title="Title">
 				<content><Bar id="bar1">
 						<contentRight>
 						</contentRight>
@@ -13,16 +12,36 @@
 					</contentMiddle>
 					</Bar>
 					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
-						<sap.ui.layout:content>
-							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label" type="Active" title="Farbmeister GmbH" id="item1_1559663806083" icon="sap-icon://palette" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Unternehmen'\}\}\}"/>
-							<ObjectListItem type="Active" title="Malerei May" id="item0_1559663888071" icon="sap-icon://wrench"/>
-							<ObjectListItem type="Active" id="item1_1559663889956" icon="sap-icon://shipping-status" title="Morgan &amp; Marston Malerei "/>
+						<sap.ui.layout:content><ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" ariaLabelledBy="__xmlview0--item4-label" type="Active" title="Farbmeister GmbH" id="item1_1559663806083" icon="sap-icon://palette" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Unternehmen'\}\}\}"/>
+							<ObjectListItem type="Active" title="Malerei May" id="item0_1559663888071" icon="sap-icon://supplier"/>
+							<ObjectListItem type="Active" id="item1_1559663889956" icon="sap-icon://group" title="Morgan &amp; Marston Malerei "/>
 							<ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" type="Active" title="Malereibetrieb Van Der Linde" numberUnit="eur" id="item2_1559663891583" icon="sap-icon://leads"/>
 							<InputListItem type="Navigation" id="item6" label="myhelper Team"/>
 							<InputListItem type="Navigation" id="item7" label="myhelper"/></sap.ui.layout:content>
-					</sap.ui.layout:Grid>
+					</sap.ui.layout:Grid><Bar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="bar1_1560705272010">
 					
-					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+					    <contentLeft>
+					
+					        <Button xmlns="sap.m" text="&lt;&lt;&lt;" id="button1"/>
+					
+					        
+					
+					    </contentLeft>
+					
+					    <contentMiddle>
+					
+					        </contentMiddle>
+					
+					    <contentRight>
+					
+					        <Button xmlns="sap.m" text="&gt;&gt;&gt;" id="button0"/>
+					
+					        
+					
+					    </contentRight>
+					
+					    </Bar>
+				    <Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
 							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>

@@ -187,6 +187,27 @@
 					"target": [
 						"Team"
 					]
+				},
+				{
+					"name": "Kalender",
+					"pattern": "Kalender",
+					"target": [
+						"Kalender"
+					]
+				},
+				{
+					"name": "Adresse",
+					"pattern": "Adresse",
+					"target": [
+						"Adresse"
+					]
+				},
+				{
+					"name": "Zahlungsart",
+					"pattern": "Zahlungsart",
+					"target": [
+						"Zahlungsart"
+					]
 				}
 			],
 			"targets": {

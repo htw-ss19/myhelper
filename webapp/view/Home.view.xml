@@ -6,39 +6,30 @@
 					<content>
 						<VBox justifyContent="Center" alignItems="Center" alignContent="Center">
 							<items>
-								<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px"
-									id="image0"/>
+								<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0"/>
 								<Panel xmlns="sap.m">
 									<content>
 										<Text xmlns="sap.m" text="Willkommen bei myhelper" id="text2" textAlign="Center"/>
 									</content>
 								</Panel>
-								<Text xmlns="sap.m"
-									text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-									id="text0" textAlign="Center"/>
+								<Text xmlns="sap.m" text="Ihr Partner für Dienstleistungen in Ihrer Nähe!" id="text0" textAlign="Center"/>
 							</items>
 						</VBox>
 						<Bar busyIndicatorSize="Small">
 							<contentMiddle>
-								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button1"
-									press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
-								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Registrieren" id="button0"
-									press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Registrieren'\}\}\}"/>
+								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Anmelden" id="button1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
+								<Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Registrieren" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Registrieren'\}\}\}"/>
 							</contentMiddle>
 						</Bar>
 						<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 							<contentMiddle>
-								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
-									action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 								<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
-									action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 								<Text xmlns="sap.m" text="|" id="text1"/>
-								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
-									press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 								<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
-									action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+								<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 							</contentMiddle>
 						</Bar>
 					</content>

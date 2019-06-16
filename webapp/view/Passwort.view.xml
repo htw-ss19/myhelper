@@ -1,7 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Passwort">
 	<App>
-		<pages>
-			<Page title="myhelper - Passwort zurücksetzen">
+		<pages><Page title="myhelper - Passwort zurücksetzen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -25,7 +24,7 @@
 					</Bar>
 					<Bar id="bar2">
 					    <contentMiddle>
-					        <Button xmlns="sap.m" text="Startseite" id="button0" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+					        <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Login" id="button0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Login'\}\}\}"/>
 					    </contentMiddle>
 					</Bar>
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">

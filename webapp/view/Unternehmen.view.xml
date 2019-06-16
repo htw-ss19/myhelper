@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Unternehmen">
 	<App>
 		<pages>
-			<Page title="Unterenhmen">
+			<Page title="Title">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -21,6 +21,30 @@
 					<VBox width="100%" direction="Column" id="vbox0">
 					
 					    <items>
+					
+					    <Bar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="bar1_1560705272010">
+					
+					    <contentLeft>
+					
+					        <Button xmlns="sap.m" text="&lt;&lt;&lt;" id="button1"/>
+					
+					        
+					
+					    </contentLeft>
+					
+					    <contentMiddle>
+					
+					        </contentMiddle>
+					
+					    <contentRight>
+					
+					        <Button xmlns="sap.m" text="&gt;&gt;&gt;" id="button0"/>
+					
+					        
+					
+					    </contentRight>
+					
+					    </Bar>
 					
 					    </items>
 					

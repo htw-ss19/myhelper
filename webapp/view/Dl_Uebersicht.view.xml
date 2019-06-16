@@ -1,8 +1,7 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="myhelper.myhelper.controller.Dl_Uebersicht">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Dl_Uebersicht">
 	<App>
 		<pages>
-			<Page title="Dienstleistungsübersicht">
+			<Page title="Title">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -16,25 +15,28 @@
 							</ComboBox>
 						</contentRight>
 						<contentLeft>
-							<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"
-								press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+							<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
-					</Bar>
-					
+					</Bar><sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid0">
+						<sap.ui.layout:content>
+					<DisplayListItem type="Navigation" label="Anstriche" value="Value" id="item40" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<DisplayListItem type="Navigation" label="Schimmelbeseitigung" value="Value" id="item8" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<DisplayListItem type="Navigation" label="Lackierarbeiten" value="Value" id="item50" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<DisplayListItem type="Navigation" label="Fassadensanierung" value="Value" id="item49" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<DisplayListItem type="Navigation" value="Value" id="item51" label="Tapezieren" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<DisplayListItem type="Navigation" label="Verputzen, Zierputz &amp; Stuck" value="Value" id="item39" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'U_Uebersicht'\}\}\}"/>
+					<GroupHeaderListItem id="item36"/>
+					</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
 					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 							<Text xmlns="sap.m" text="|" id="text1"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
-								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 						</contentMiddle>
 					</Bar>
 				</content>

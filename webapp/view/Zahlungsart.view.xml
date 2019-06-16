@@ -1,8 +1,6 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="myhelper.myhelper.controller.Zahlungsart">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Zahlungsart">
 	<App>
-		<pages>
-			<Page title="Zahlungsart">
+		<pages><Page title="Zahlungsart auswählen">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -16,26 +14,48 @@
 							</ComboBox>
 						</contentRight>
 						<contentLeft>
-							<Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0"
-								press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
+							<Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
 					</Bar>
+					<FeedListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" icon="sap-icon://simple-payment" sender="PayPal" id="item37_copy4" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}" info="Sie erhalten nach Ihrem Termin einen Link per Email."/>
+					<FeedListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" icon="sap-icon://simple-payment" sender="Barzahlung" id="item37_copy3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}" info="Bezahlen Sie nach Abwicklung Ihrer Bestellung direkt vor Ort."/>
+					<FeedListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" icon="sap-icon://simple-payment" sender="Überweisung" id="item37_copy6" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}" info="Überweisen Sie den Rechnungsbetrag nach Erhalt Ihrer Dienstleistung."/>
+					<FeedListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" icon="sap-icon://simple-payment" sender="Kreditkarte" id="item37_copy7" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}" info="Hinterlegen Sie Ihre Zahlungsdaten. Der Betrag wird automatisch von Ihrem Konto gebucht."/>
+					<FeedListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" icon="sap-icon://simple-payment" sender="Klarna" id="item37" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Adresse'\}\}\}" info="Sie erhalten nach Ihrem Termin einen Link per Email."/>
+					<Bar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="bar1_1560705272010">
 					
-					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+					    <contentLeft>
+					
+					        <Button xmlns="sap.m" text="&lt;&lt;&lt;" id="button1"/>
+					
+					        
+					
+					    </contentLeft>
+					
+					    <contentMiddle>
+					
+					        </contentMiddle>
+					
+					    <contentRight>
+					
+					        <Button xmlns="sap.m" text="&gt;&gt;&gt;" id="button0"/>
+					
+					        
+					
+					    </contentRight>
+					
+					    </Bar><Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Privacy" id="link1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Privacy'\}\}\}"/>
 							<Text xmlns="sap.m" text="|" id="text1"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2"
-								press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Security" id="link2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Security'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy"/>
-							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action"
-								action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Contact" id="link3" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
 						</contentMiddle>
+					<contentLeft>
+					</contentLeft>
 					</Bar>
 				</content>
 			</Page>

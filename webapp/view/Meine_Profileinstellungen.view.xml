@@ -2,7 +2,7 @@
 	controllerName="myhelper.myhelper.controller.Meine_Profileinstellungen" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
-			<Page title="Meine Profileinstellungen">
+			<Page title="Title">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
