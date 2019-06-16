@@ -1,7 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="myhelper.myhelper.controller.Unternehmen">
 	<App>
-		<pages>
-			<Page title="Title">
+		<pages><Page title="Title">
 				<content>
 					<Bar id="bar1">
 						<contentRight>
@@ -16,13 +15,64 @@
 						</contentRight>
 						<contentLeft><Image xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="50px" height="50px" id="image0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Startseite'\}\}\}"/>
 						</contentLeft>
-					</Bar>
+					</Bar><VBox width="100%" direction="Column" id="vbox0">
 					
-					<VBox width="100%" direction="Column" id="vbox0">
+					    <items><sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
 					
-					    <items>
+					        <sap.ui.layout:content>
 					
-					    <Bar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="bar1_1560705272010">
+					            <Text xmlns="sap.m" text="Farbmeister GmbH" id="text0"/>
+					
+					            <Image xmlns="sap.m" src="https://ui5.sap.com/resources/sap/ui/documentation/sdk/images/logo_ui5.png" width="140px" height="140px" id="image0_1560716878215"/>
+					
+					            <sap.ui.layout:ResponsiveSplitter defaultPane="__pane2" id="splitter2">
+					
+					                <sap.ui.layout:rootPaneContainer>
+					
+					                    <sap.ui.layout:PaneContainer id="container1">
+					
+					                        <sap.ui.layout:panes>
+					
+					                            <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane2">
+					
+					                            </sap.ui.layout:SplitPane>
+					
+					                            <sap.ui.layout:SplitPane requiredParentWidth="50" id="pane3">
+					
+					                                <sap.ui.layout:content>
+					
+					                                    <Panel height="100%" backgroundDesign="Transparent" id="panel3">
+					
+					                                        <layoutData>
+					
+					                                            <sap.ui.layout:SplitterLayoutData id="data23"/>
+					
+					                                        </layoutData>
+					
+					                                    </Panel>
+					
+					                                </sap.ui.layout:content>
+					
+					                            </sap.ui.layout:SplitPane></sap.ui.layout:panes>
+					
+					                    </sap.ui.layout:PaneContainer>
+					
+					                </sap.ui.layout:rootPaneContainer>
+					
+					            </sap.ui.layout:ResponsiveSplitter>
+					
+					            <RatingIndicator xmlns="sap.m" maxValue="5" value="3" id="indicator0"/>
+					
+					            <Link xmlns="sap.m" href="https://ui5.sap.com" id="link0_1560716947739" text="Farbmeister bewerten!"/>
+					
+					        </sap.ui.layout:content>
+					
+					    </sap.ui.layout:VerticalLayout>
+					
+					    </items>
+					
+					</VBox>
+				    <Bar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="bar1_1560705272010">
 					
 					    <contentLeft>
 					
@@ -45,12 +95,7 @@
 					    </contentRight>
 					
 					    </Bar>
-					
-					    </items>
-					
-					</VBox>
-					
-					<Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
+				    <Bar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="bar2_copy">
 						<contentMiddle>
 							<Link xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Terms " id="link0" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'Terms'\}\}\}"/>
 							<Text xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="|" id="text1_copy2"/>
